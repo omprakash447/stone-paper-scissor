@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.container {
+    height: 100%;
+    width: 95%;
+    background-color: lightblue;
+    line-height: 40px;
+    box-shadow: 0px 0px 10px black inset;
+    border-radius: 20px;
+}
+
+.container .head {
+    height: 100%;
+    width: 100%;
+    background-color: lightcoral;
+    border-radius: 10px;
+}
+
+.container .head h1 {
+    margin: 30px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+
+.container .score {
+    height: 100%;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.container .score p {
+    font-size: 20px;
+    font-weight: 900;
+    color: blue;
+    margin: 30px;
+}
+
+.container .bodyofgame {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin: 0px;
+    margin-top: 50px;
+    gap: 0px;
+}
+
+.container .bodyofgame button {
+    height: 50px;
+    width: 150px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family: sans-serif;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.container .choice {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container .choice p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: blue;
+}
+
+.container1 {
+    height: 100%;
+    width: 95%;
+    background-color: lightblue;
+    line-height: 40px;
+    box-shadow: 0px 0px 10px black inset;
+    border-radius: 20px;
+    opacity: .4;
+    display: block;
+}
+
+.container1 .head {
+    height: 100%;
+    width: 100%;
+    background-color: lightcoral;
+    border-radius: 10px;
+}
+
+.container1 .head h1 {
+    margin: 30px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+
+.container1 .score {
+    height: 100%;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.container1 .score p {
+    font-size: 20px;
+    font-weight: 900;
+    color: blue;
+    margin: 30px;
+}
+
+.container1 .bodyofgame {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin: 0px;
+    margin-top: 50px;
+    gap: 0px;
+}
+
+.container1 .bodyofgame button {
+    height: 50px;
+    width: 150px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family: sans-serif;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.container1 .choice {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container1 .choice p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: blue;
+}
+
+.container3 {
+    /* position: relative; */
+    /* position: absolute; */
+    display: none;
+}
+
+.container3 .text {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    border-radius: 20px;
+}
+
+.container3 p {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container3 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.container3 button {
+    height: 50px;
+    width: 100px;
+    background-color: lightcoral;
+    border: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container2 .text {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightcyan;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black inset;
+}
+
+.container2 p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: darkgoldenrod;
+}
+
+.container2 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.container2 button {
+    height: 50px;
+    width: 100px;
+    background-color: lightcoral;
+    border: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container2 {
+    /* position: absolute; */
+    display: block;
+}
