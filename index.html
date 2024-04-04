@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    
+    body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(48, 46, 46);
+    }
+    
+    .container {
+        height: 100%;
+        width: 90%;
+        padding: 50px;
+        border: 2px solid lightcyan;
+        margin-top: 10px;
+        background-color: lightgoldenrodyellow;
+        border-radius: 20px;
+    }
+    
+    .container .head h1 {
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: 900;
+        color: lightseagreen;
+        text-align: center;
+    }
+    
+    .container .emogi {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+    
+    .container .emogi p {
+        font-size: 50px;
+        margin-top: 50px
+    }
+    
+    .container .playbtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .container .playbtn button {
+        height: 50px;
+        width: 100px;
+        font-size: 20px;
+        font-family: cursive;
+        font-weight: 100;
+        border-radius: 25px;
+        border: none;
+        background-color: lightcoral;
+        color: wheat;
+        box-shadow: 0px 0px 10px black inset;
+    }
+    
+    #s1 {
+        animation-name: animation;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+    }
+    
+    #s2 {
+        animation-name: animation;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+    }
+    
+    #s3 {
+        animation-name: animation;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes animation {
+        from {
+            opacity: 0;
+            color: red;
+        }
+        to {
+            opacity: 1;
+            color: green;
+            margin-left: 20px;
+        }
+    }
+    
+    .universe {
+        margin-top: -10px;
+        position: absolute;
+        top: 70%;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        animation-name: load;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    
+    .earth {
+        position: absolute;
+        top: 65%;
+        height: 70px;
+        width: 70px;
+        border: 2px solid yellow;
+        box-shadow: 0px 0px 10px yellow;
+        border-radius: 50%;
+        background-color: yellow;
+    }
+    
+    @keyframes load {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .rad {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid rgb(48, 46, 46);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .child {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid red;
+        box-shadow: 0px 0px 10px red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1><span id="s1">Stone</span> - <span id="s2">Paper</span> -<span id="s3"> Scissors</span></h1>
+        </div>
+        <div class="emogi">
+            <p>✊</p>
+            <p>🖐️</p>
+            <p>✌️</p>
+        </div>
+        <div class="playbtn">
+            <button><a href="spc.html">Play</a></button>
+        </div>
+    </div>
+
+    <div class="universe">
+        <div class="earth">
+        </div>
+        <div class="moon"></div>
+        <div class="child">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
