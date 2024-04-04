@@ -80,11 +80,11 @@ btn.addEventListener("click", function() {
 function findwinner() {
     let result = "";
 
-    if (mychoice == cpuchoice) {
+    if (mychoice === cpuchoice) {
         result = "It is tie";
         yourscore.innerText = (parseInt(yourscore.innerText) + 1);
         computerscore.innerText = (parseInt(computerscore.innerText) + 1);
-        wincall1.innerText = "The mathch is tie 😑"
+        wincall1.innerText = "The match is tie 😑"
     } else if (mychoice == "✊" && (cpuchoice == "🖐️" || cpuchoice == "✌️")) {
         result = "You win";
         yourscore.innerText = parseInt(yourscore.innerText) + 1;
@@ -93,7 +93,20 @@ function findwinner() {
         result = "You lost";
         computerscore.innerText = (parseInt(computerscore.innerText) + 1);
         wincall1.innerText = "You lost 😓"
+    } else if (mychoice == "✌️" && cpuchoice == "✊") {
+        result = "You lost ";
+        computerscore.innerText = (parseInt(computerscore.innerText) + 1);
+        wincall1.innerText = "You lost 😓"
+    } else if (mychoice == "✌️" && cpuchoice == "🖐️") {
+        result = "You win ";
+        yourscore.innerText = parseInt(yourscore.innerText) + 1;
+        wincall1.innerText = "You won 😎"
+    } else if (mychoice == "🖐️" && cpuchoice == "✊") {
+        result = "You lost ";
+        computerscore.innerText = (parseInt(computerscore.innerText) + 1);
+        wincall1.innerText = "You lost 😓"
     }
+
     // else if(mychoice=="✌️"&&cpuchoice=="✊"){
     //     result="You lost";
     // }
